@@ -25,6 +25,7 @@ app.use("/posts", postRoutes);
 app.get("/", (req, res) => {
   res.json({
     message: "Welcome",
+    frontend:"https://task-35-ref-frontend.vercel.app/"
   });
 });
 
