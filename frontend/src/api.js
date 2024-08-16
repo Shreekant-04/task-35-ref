@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000", // Adjust if necessary
+  baseURL: "https://task-35-ref-backend.vercel.app", 
 });
 
 export const createUser = (user) => {
@@ -13,5 +13,4 @@ export const createPost = (post) => {
 };
 export const getPosts = () => api.get("/posts");
 
-// Add this function to fetch users
 export const getUsers = () => api.get("/users");
